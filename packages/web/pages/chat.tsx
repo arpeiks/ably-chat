@@ -4,7 +4,7 @@ import React from "react"
 const key = "37EIzw.OhTL3Q:nL2B1l7Rkboe4NwW3B_n45OsuiwfLC2nNVKlXwUnIAk"
 
 const Chat = () => {
-  console.log("from chat page")
+  console.log("from chat pages")
 
   React.useEffect(() => {
     // const ablyRealtime = new ably.Realtime(key)
