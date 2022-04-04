@@ -62,8 +62,10 @@ launch.json
 /coverage
 
 # next.js
-/.next/
-/out/
+packages/web/.next/
+packages/web/out/
+
+packages/api/dist
 
 # production
 /build
