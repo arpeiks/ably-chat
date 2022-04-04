@@ -9,8 +9,8 @@ const channel = ablyRealtime.channels.get('ably-chat')
 
 app.use(express.json())
 
-app.post('/send-message', (req: Request, res: Response) => {
-  const body = req.body
+app.get('/send-message', (_req: Request, res: Response) => {
+  const body = { msg: 'Hi there', user: 'arpeiks', action: 'sent' }
   const data = { msg: body.msg, user: body.user, action: body.action }
 
   channel.publish('data', data, (err) => {
